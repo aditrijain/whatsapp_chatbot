@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environment
+venv/
+.env
+
+# Uploaded images (optional: if large or generated dynamically)
+uploaded_images/
+
+# Logs
+*.log
+
+# Docker
+*.dockerignore
+
+# System files
+.DS_Store
+Thumbs.db
