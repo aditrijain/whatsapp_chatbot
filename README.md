@@ -60,7 +60,7 @@ OPENROUTER_API_KEY
 docker-compose up --build
 ```
 ### 5. Deployment (Already Deployed on Render):
-send the code "join lack-southern" to "+1 415 523 8886"
+
 The service is running continuously in the cloud.
 Twilio webhooks call the Render URL directly.
 
