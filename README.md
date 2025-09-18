@@ -1,7 +1,7 @@
 # WhatsApp Chatbot
 
 A Python-based WhatsApp chatbot application that responds to messages using OpenAI.  
-It is deployed using Docker and Render for 24/7 availability and ease of management.
+It is deployed using Docker and Render.
 Link to the demo video: [link](https://drive.google.com/file/d/1sWH4xsHP0lvu4OvMvVZ0xXgS408cuP_S/view?usp=sharing)
 
 ##  Features
