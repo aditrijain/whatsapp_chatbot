@@ -2,8 +2,9 @@
 
 A Python-based WhatsApp chatbot application that responds to messages using OpenAI.  
 It is deployed using Docker and Render for 24/7 availability and ease of management.
+Link to the demo video: [link](https://drive.google.com/file/d/1sWH4xsHP0lvu4OvMvVZ0xXgS408cuP_S/view?usp=sharing)
 
-## 🚀 Features
+##  Features
 
 - Responds to text and media messages (images and audio) via WhatsApp.
 - Uses OpenAI API for intelligent responses.
@@ -12,7 +13,7 @@ It is deployed using Docker and Render for 24/7 availability and ease of managem
 - Fully dockerized for easy deployment.
 
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 - Python 3.11
 - FastAPI
@@ -21,7 +22,7 @@ It is deployed using Docker and Render for 24/7 availability and ease of managem
 - OpenAI API
 - Twilio API
 
-## ⚙️ Setup
+##  Setup
 
 ### 1. Clone the Repository
 
@@ -62,5 +63,5 @@ docker-compose up --build
 ### 5. Deployment (Already Deployed on Render):
 
 The service is running continuously in the cloud.
-Twilio webhooks call the Render URL directly.
+Twilio webhooks call the Render URL directly. [Link](https://whatsapp-chatbot-final.onrender.com)
 
