@@ -32,7 +32,6 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 @router.post("/message")
 async def reply(
     Body: str = Form(default=""), 
-    From: str = Form(...),
     MediaUrl0: str = Form(default=None),
     MediaContentType0: str = Form(default=None),
     NumMedia: str = Form(default="0"),  # Twilio sends this to indicate if media is present
@@ -101,7 +100,7 @@ async def reply(
     # Store the conversation in the database
     try:
         conversation = Conversation(
-            sender=From,
+            sender=whatsapp_number,
             message=Body,
             image_url=MediaUrl0,
             response=chat_response
@@ -112,5 +111,5 @@ async def reply(
     except SQLAlchemyError as e:
         db.rollback()
         logger.error(f"Error storing conversation in database: {e}")
-    send_message(From, chat_response)
+    send_message(whatsapp_number, chat_response)
     return ""
